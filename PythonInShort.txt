@@ -1,0 +1,73 @@
+################### Lists ###################
+
+
+Lists are ordered, accessible by indexes, can contain any type of objects, and are mutable.
+
+
+================================================================
+===  Create List  ===
+================================================================
+	# Empty List:
+    L = []
+
+	# List can be mixed data types:
+    L = [ 1, 'abc', 1.23, (3+4j), True]
+
+  # Converting from other types through list() constructor:
+    L = list('abc')
+
+  # Nested List:
+    L = ['a', ['bb', ['ccc', 'ddd'], 'ee', 'ff'], 'g', 'h']
+
+  # Slicing and existing list also returns in a new list.
+
+
+================================================================
+===  Accessing List Elements  ===
+================================================================
+  # Accessing List elements:
+    =  Elements can be accessed by index, starting at 0.
+
+    =  Elements can be accessed by negative indexes can be used as well.
+        Last element can be accessed from index starting from -1.
+
+    =  Accessing nested elements: L[2][2][0].
+
+    =  out of bound error is raised when you access outside of index.
+
+
+================================================================
+===  List Slicing  ===
+================================================================
+  #  List Slicing:
+    =  L[n:m] returns the part of the list from the “n-th” item to the “m-1 th” item.
+
+    =  print(L[3:-1]): You can mix positive and negative indexes.
+        Just that, from index should be greater than to index.
+
+    = no error raised when you try to slice out of bound indexes.
+
+
+================================================================
+===  Modifying a List  ===
+================================================================
+
+	==	Adding elements to the List:
+	#  L[0] = 'orange'; L[-1] = 'violet'
+
+	#  L.append(<item>): adds item to the end of the list.
+		=  If they <item> is a list, the whole list is appended as a single element.
+
+	#	L.insert(<index>, <item>): To insert an item at a specific index.
+		All the elements from the index are shifted to the right.
+
+	#  Out of bound error is raised when you try to insert at out of bound index.
+
+	#  L1.extend(L2) or L1 += L2 or L1 = L1 + 2 can be used to add elements from an iterable to existing list
+		=  Each element of Iterable is added as an individual element to the List.
+
+	==	Removing elements from the list:
+	#	L.pop([<index>]): takes an optional index and returns that element, else last element is returned.
+		-	index error is thrown for out of bound accessing.
+	
+	#	del L(<index>): is used if you do not the value that is being removed.
