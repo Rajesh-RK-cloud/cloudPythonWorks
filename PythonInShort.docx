@@ -1,5 +1,5 @@
 ################### Lists ###################
-
+Lists are ordered, accessible by indexes, can contain any type of objects, and are mutable.
 ================================================================
 ===  Create List  ===
 ================================================================
@@ -29,6 +29,8 @@
 
     =  Accessing nested elements: L[2][2][0].
 
+    =  out of bound error is raised when you access outside of index.
+
 
 ================================================================
 ===  List Slicing  ===
@@ -39,6 +41,8 @@
     =  print(L[3:-1]): You can mix positive and negative indexes.
         Just that, from index should be greater than to index.
 
+    = no error raised when you try to slice out of bound indexes.
+
 
 ================================================================
 ===  Modifying a List  ===
@@ -46,6 +50,12 @@
   #  L[0] = 'orange'; L[-1] = 'violet'
 
   #  L.append(<item>): adds item to the end of the list.
+    =  If they <item> is a list, the whole list is appended as a single element.
 
   #  L.insert(<index>, <item>): To insert an item at a specific index.
       All the elements from the index are shifted to the right.
+
+  #  Out of bound error is raised when you try to insert at out of bound index.
+
+  #  L1.extend(L2) or L1 += L2 or L1 = L1 + 2 can be used to add elements from an iterable to existing list
+    =  Each element of Iterable are added as individual elements to the List.
