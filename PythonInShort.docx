@@ -1,6 +1,8 @@
 ################### Lists ###################
 
-Create List:
+================================================================
+===  Create List  ===
+================================================================
   # Empty List:
     L = []
 
@@ -12,3 +14,38 @@ Create List:
 
   # Nested List:
     L = ['a', ['bb', ['ccc', 'ddd'], 'ee', 'ff'], 'g', 'h']
+
+  # Slicing and existing list also returns in a new list.
+
+
+================================================================
+===  Accessing List Elements  ===
+================================================================
+  # Accessing List elements:
+    =  Elements can be accessed by index, starting at 0.
+
+    =  Elements can be accessed by negative indexes can be used as well.
+        Last element can be accessed from index starting from -1.
+
+    =  Accessing nested elements: L[2][2][0].
+
+
+================================================================
+===  List Slicing  ===
+================================================================
+  #  List Slicing:
+    =  L[n:m] returns the part of the list from the “n-th” item to the “m-1 th” item.
+
+    =  print(L[3:-1]): You can mix positive and negative indexes.
+        Just that, from index should be greater than to index.
+
+
+================================================================
+===  Modifying a List  ===
+================================================================
+  #  L[0] = 'orange'; L[-1] = 'violet'
+
+  #  L.append(<item>): adds item to the end of the list.
+
+  #  L.insert(<index>, <item>): To insert an item at a specific index.
+      All the elements from the index are shifted to the right.
