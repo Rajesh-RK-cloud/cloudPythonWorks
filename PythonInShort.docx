@@ -48,3 +48,4 @@
   #  L.append(<item>): adds item to the end of the list.
 
   #  L.insert(<index>, <item>): To insert an item at a specific index.
+      All the elements from the index are shifted to the right.
