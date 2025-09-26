@@ -69,5 +69,42 @@ Lists are ordered, accessible by indexes, can contain any type of objects, and a
 	==	Removing elements from the list:
 	#	L.pop([<index>]): takes an optional index and returns that element, else last element is returned.
 		-	index error is thrown for out of bound accessing.
-	
-	#	del L(<index>): is used if you do not the value that is being removed.
+			
+	#	del L(<index>): is used if you do not want the value that is being removed.
+
+	#	L.remove(<value>): to delete an element by value, if you are not aware of the index number.
+
+	#	del L[1:4]: you can use slice 
+
+		**	all the elements must do a left shift after poping an element from middle of list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
